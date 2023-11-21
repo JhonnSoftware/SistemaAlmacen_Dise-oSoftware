@@ -291,6 +291,7 @@ public class Registrar_OrdenDeCompra extends javax.swing.JPanel {
         Content_Pasos.add(regisGuia, BorderLayout.CENTER);
         Content_Pasos.revalidate();
         Content_Pasos.repaint();
+        JOptionPane.showMessageDialog(null, "SE HA REGISTRADO UNA ORDEN DE COMPRA CORRECTAMENTE");
     }//GEN-LAST:event_jLabel3MouseClicked
 
     private void tblListaOrdenCompraMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblListaOrdenCompraMouseClicked

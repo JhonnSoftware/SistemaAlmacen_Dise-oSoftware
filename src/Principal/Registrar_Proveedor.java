@@ -264,6 +264,7 @@ public class Registrar_Proveedor extends javax.swing.JPanel {
         Content_Pasos.add(regisOrdenCompra, BorderLayout.CENTER);
         Content_Pasos.revalidate();
         Content_Pasos.repaint();
+        JOptionPane.showMessageDialog(null, "SE HA REGISTRADO UN PROVEEDOR CORRECTAMENTE");
     }//GEN-LAST:event_btnSiguienteDerechaMouseClicked
 
     private void tblListaProveedorMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblListaProveedorMouseClicked

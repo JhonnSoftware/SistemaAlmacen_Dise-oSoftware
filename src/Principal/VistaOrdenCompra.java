@@ -27,6 +27,7 @@ public class VistaOrdenCompra extends javax.swing.JFrame {
         btnBuscarListaOrdenCompra = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         tblListaOrdenCompra = new javax.swing.JTable();
+        btnSalirListaOrdenCompra = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -38,10 +39,10 @@ public class VistaOrdenCompra extends javax.swing.JFrame {
 
         jLabel16.setFont(new java.awt.Font("Roboto Light", 0, 14)); // NOI18N
         jLabel16.setText("BUSCAR POR CODIGO: ");
-        jPanel1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 110, -1, -1));
+        jPanel1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, -1, -1));
 
         txtBuscarPorCodigoOC.setBackground(new java.awt.Color(204, 204, 204));
-        jPanel1.add(txtBuscarPorCodigoOC, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 100, 380, 30));
+        jPanel1.add(txtBuscarPorCodigoOC, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 100, 380, 30));
 
         btnBuscarListaOrdenCompra.setBackground(new java.awt.Color(0, 134, 190));
         btnBuscarListaOrdenCompra.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
@@ -53,7 +54,7 @@ public class VistaOrdenCompra extends javax.swing.JFrame {
                 btnBuscarListaOrdenCompraActionPerformed(evt);
             }
         });
-        jPanel1.add(btnBuscarListaOrdenCompra, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 100, 100, 30));
+        jPanel1.add(btnBuscarListaOrdenCompra, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 100, 100, 30));
 
         tblListaOrdenCompra.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -70,7 +71,19 @@ public class VistaOrdenCompra extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(tblListaOrdenCompra);
 
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, 740, 230));
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, 750, 230));
+
+        btnSalirListaOrdenCompra.setBackground(new java.awt.Color(0, 134, 190));
+        btnSalirListaOrdenCompra.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        btnSalirListaOrdenCompra.setForeground(new java.awt.Color(255, 255, 255));
+        btnSalirListaOrdenCompra.setText("SALIR");
+        btnSalirListaOrdenCompra.setBorder(null);
+        btnSalirListaOrdenCompra.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSalirListaOrdenCompraActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnSalirListaOrdenCompra, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 100, 100, 30));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -126,6 +139,10 @@ public class VistaOrdenCompra extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_tblListaOrdenCompraMousePressed
 
+    private void btnSalirListaOrdenCompraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirListaOrdenCompraActionPerformed
+        dispose();
+    }//GEN-LAST:event_btnSalirListaOrdenCompraActionPerformed
+
     private void MostrarDatosOrdenCompra(){
         
         DefaultTableModel modelo = new DefaultTableModel();
@@ -178,6 +195,7 @@ public class VistaOrdenCompra extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnBuscarListaOrdenCompra;
+    private javax.swing.JButton btnSalirListaOrdenCompra;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
